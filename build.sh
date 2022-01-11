@@ -28,7 +28,7 @@ echo "###################################"
 ## -s: signs the packages
 ## -n: only add new packages not already in database
 ## -R: remove old package files when updating their entry
-repo-add -R archlan-packages.db.tar.gz *.pkg.tar.zst
+repo-add -s -n -R archlan-packages.db.tar.gz *.pkg.tar.zst
 
 # Removing the symlinks because GitLab can't handle them.
 rm archlan-packages.db
